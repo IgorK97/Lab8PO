@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Interfaces.Repository;
 using Interfaces.Services;
+using DomainModel.Exceptions;
 
 namespace BLL.Services
 {
@@ -107,6 +108,8 @@ namespace BLL.Services
         public bool CancelOrder(int odId)
         {
             Order order = dbr.Orders.GetItem(odId);
+            if (order == null)
+                throw new OrderNotFoundException(odId);
             order.DelstatusId = (int)DeliveryStatus.Canceled;
             dbr.Orders.Update(order);
             //if (dbr.Save() > 0)
@@ -115,22 +118,33 @@ namespace BLL.Services
             return true;
         }
 
-        public bool SubmitOrder(int odId, string addressdel)
+        public void SubmitOrder(int odId, string addressdel)
         {
             Order order = dbr.Orders.GetItem(odId);
             if (order != null)
             {
                 if (order.FinalPrice == (decimal)0.00)
-                    return false;
+                    //return false;
+                    throw new EmptyOrderException(odId);
+                foreach(OrderLine ol in order.OrderLines)
+                {
+                    if (ol.Pizza.Active == false)
+                        throw new OrderComponentMissingException(odId, ol.Pizza.Name);
+                    foreach (Ingredient ingr in ol.Ingredients)
+                        if (ingr.Active == false)
+                            throw new OrderComponentMissingException(odId, ingr.Name);
+                }
                 order.DelstatusId = (int)DeliveryStatus.IsBeingFormed;
                 order.Ordertime = DateTime.UtcNow;
                 order.AddressDel = addressdel;
-                dbr.Orders.Update(order); 
-                return true;
+                dbr.Orders.Update(order);
+                //return true;
                 //if (dbr.Save() > 0)
                 //    return true;
             }
-            return false;
+            else
+                throw new OrderNotFoundException(odId);
+            //return false;
         }
 
         public (decimal price, decimal weight) UpdateOrder(int odId)
@@ -139,6 +153,8 @@ namespace BLL.Services
             price = dbr.OrderLines.GetList().Where(ol => ol.OrdersId == odId).Select(i => i.PositionPrice).Sum();
             weight = dbr.OrderLines.GetList().Where(ol => ol.OrdersId == odId).Select(i => i.Weight).Sum();
             Order order = dbr.Orders.GetItem(odId);
+            if (order == null)
+                throw new OrderNotFoundException(odId);
             order.Weight = weight;
             order.FinalPrice = price;
             dbr.Orders.Update(order);

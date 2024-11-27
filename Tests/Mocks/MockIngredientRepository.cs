@@ -16,12 +16,14 @@ namespace Tests.Mocks
             new Ingredient()
             {
                 Id=1,
-                Name="i1"
+                Name="i1",
+                Active=true
             },
             new Ingredient()
             {
                 Id=2,
-                Name="i2"
+                Name="i2",
+                Active=false
             }
         };
         public static Mock<IRepository<Ingredient>> GetMock()

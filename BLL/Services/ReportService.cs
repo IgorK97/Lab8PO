@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using Interfaces.Repository;
+using DomainModel.Exceptions;
 
 
 namespace BLL.Services
@@ -27,13 +28,13 @@ namespace BLL.Services
         public List<OrdersByMonth> ExecuteSP(int month, int year, int ClientId)
         {
 
-            return db.Reports.ExecuteSP(month, year, ClientId).Select(i => new OrdersByMonth
+            var res = db.Reports.ExecuteSP(month, year, ClientId).Select(i => new OrdersByMonth
             {
                 order_id = i.order_id,
                 courier_id = i.courier_id,
                 Date = i.Date
             }).ToList();
-
+            return res;
 
         }
 
@@ -49,6 +50,8 @@ namespace BLL.Services
                  Name=i.Name,
             })
             .ToList();
+            //if (request == null)
+            //    throw new PizzaNotFoundException((int) ingredientId);
             return request;
         }
     }

@@ -44,6 +44,45 @@ namespace Tests.Mocks
                 FinalPrice=200,
                 Weight=200,
                 OrderLines = new List<OrderLine>(){MockOrderLineRepository.lines[1] }
+            },
+            new Order()
+            {
+                Id=3,
+                ClientId=1,
+                FinalPrice=0.00M,
+                DelstatusId=(int)DeliveryStatus.NotPlaced,
+                Weight=0
+            },
+            new Order()
+            {
+                Id=4,
+                ClientId=1,
+                FinalPrice=100,
+                Weight=100,
+                CourierId=null,
+                ManagersId=null,
+                AddressDel="",
+                Comment="",
+                Deliverytime=null,
+                Ordertime=null,
+                DelstatusId=(int)DeliveryStatus.NotPlaced,
+                OrderLines = new List<OrderLine>(){MockOrderLineRepository.lines[2] }
+
+            },
+            new Order()
+            {
+                Id=5,
+                ClientId=1,
+                CourierId=null,
+                ManagersId=null,
+                AddressDel="",
+                Comment="",
+                Deliverytime=null,
+                Ordertime=null,
+                DelstatusId=(int)DeliveryStatus.IsBeingFormed,
+                FinalPrice=100,
+                Weight=100,
+                OrderLines = new List<OrderLine>(){MockOrderLineRepository.lines[3] }
             }
         };
         public static Mock<IRepository<Order>> GetMock()

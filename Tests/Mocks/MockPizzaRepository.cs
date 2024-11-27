@@ -18,14 +18,16 @@ namespace Tests.Mocks
                 Id=1,
                 Active=true,
                 Description="",
-                Name="pizza1"
+                Name="pizza1",
+                Ingredients = new List<Ingredient> {new Ingredient() { Id=1} }
             },
             new Pizza()
             {
                 Id=2,
-                Active=true,
+                Active=false,
                 Description="",
-                Name="pizza2"
+                Name="pizza2",
+                Ingredients = new List<Ingredient> { new Ingredient() { Id = 1 } }
             }
         };
         public static Mock<IRepository<Pizza>> GetMock()

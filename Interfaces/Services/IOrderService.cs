@@ -19,7 +19,7 @@ namespace Interfaces.Services
 
         bool CancelOrder(int odId);
 
-        bool SubmitOrder(int odId, string addressdel);
+        void SubmitOrder(int odId, string addressdel);
 
         (decimal price, decimal weight) UpdateOrder(int odId);
 

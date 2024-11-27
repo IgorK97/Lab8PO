@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|solutionrelative:tests\\service\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|c:\\users\\igor\\source\\repos\\lab8po\\tests\\mocks\\mockuow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|solutionrelative:tests\\mocks\\mockuow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|c:\\users\\igor\\source\\repos\\lab8po\\tests\\mocks\\mockreportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|solutionrelative:tests\\mocks\\mockreportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|c:\\users\\igor\\source\\repos\\lab8po\\tests\\service\\reportservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|solutionrelative:tests\\service\\reportservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,35 +36,22 @@
               "RelativeDocumentMoniker": "Tests\\Service\\OrderServiceTest.cs",
               "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Service\\OrderServiceTest.cs",
               "RelativeToolTip": "Tests\\Service\\OrderServiceTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:41:47.034Z",
+              "WhenOpened": "2024-11-27T17:33:19.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MockUoW.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockUoW.cs",
-              "RelativeDocumentMoniker": "Tests\\Mocks\\MockUoW.cs",
-              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockUoW.cs",
-              "RelativeToolTip": "Tests\\Mocks\\MockUoW.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
+              "Title": "ReportServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Service\\ReportServiceTest.cs",
+              "RelativeDocumentMoniker": "Tests\\Service\\ReportServiceTest.cs",
+              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Service\\ReportServiceTest.cs",
+              "RelativeToolTip": "Tests\\Service\\ReportServiceTest.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:36:57.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MockReportRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockReportRepository.cs",
-              "RelativeDocumentMoniker": "Tests\\Mocks\\MockReportRepository.cs",
-              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockReportRepository.cs",
-              "RelativeToolTip": "Tests\\Mocks\\MockReportRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:32:50.856Z",
+              "WhenOpened": "2024-11-27T17:24:31.377Z",
               "EditorCaption": ""
             }
           ]

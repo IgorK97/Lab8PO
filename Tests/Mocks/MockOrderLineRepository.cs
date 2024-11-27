@@ -36,8 +36,32 @@ namespace Tests.Mocks
                 Weight=200,
                 Quantity=1,
                 Pizza = MockPizzaRepository.pizzas[1]
+            },
+            new OrderLine()
+            {
+                Id=3,
+                Custom=false,
+                OrdersId=4,
+                PizzaId=1,
+                PizzaSizesId=1,
+                PositionPrice=100,
+                Weight=100,
+                Quantity=1,
+                Pizza = MockPizzaRepository.pizzas[0],
+                Ingredients=new List<Ingredient> {MockIngredientRepository.ingrs[1] }
+            },
+            new OrderLine()
+            {
+                Id=4,
+                Custom=false,
+                OrdersId=1,
+                PizzaId=1,
+                PizzaSizesId=1,
+                PositionPrice=100,
+                Weight=100,
+                Quantity=1,
+                Pizza = MockPizzaRepository.pizzas[0]
             }
-
         };
         public static Mock<IRepository<OrderLine>> GetMock()
         {
