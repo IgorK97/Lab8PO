@@ -1,0 +1,118 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pizza\alfredosauceIngr.png" />
+    <None Remove="Pizza\AlpinesausagesIngr.png" />
+    <None Remove="Pizza\basilIngr.png" />
+    <None Remove="Pizza\bbqsauceIngr.png" />
+    <None Remove="Pizza\broccoliIngr.png" />
+    <None Remove="Pizza\ChampignonsIngr.png" />
+    <None Remove="Pizza\cheddarandparmesanIngr.png" />
+    <None Remove="Pizza\cheese.bmp" />
+    <None Remove="Pizza\cheese.jpg" />
+    <None Remove="Pizza\cheese.png" />
+    <None Remove="Pizza\CheeseSideIngr.png" />
+    <None Remove="Pizza\chickIngr.png" />
+    <None Remove="Pizza\chorizoIngr.png" />
+    <None Remove="Pizza\custom.png" />
+    <None Remove="Pizza\fetacheeseIngr.png" />
+    <None Remove="Pizza\hamandcheese.png" />
+    <None Remove="Pizza\hamIngr.png" />
+    <None Remove="Pizza\hawaii.png" />
+    <None Remove="Pizza\ItalianherbsIngr.png" />
+    <None Remove="Pizza\meat.png" />
+    <None Remove="Pizza\meatbbq.png" />
+    <None Remove="Pizza\mozzarella.png" />
+    <None Remove="Pizza\mozzarellaIngr.png" />
+    <None Remove="Pizza\mushroom.png" />
+    <None Remove="Pizza\OnionIngr.png" />
+    <None Remove="Pizza\PepperIngr.png" />
+    <None Remove="Pizza\pepperoni.png" />
+    <None Remove="Pizza\pepperoniIngr.png" />
+    <None Remove="Pizza\PineapplesIngr.png" />
+    <None Remove="Pizza\salmon.png" />
+    <None Remove="Pizza\salmonIngr.png" />
+    <None Remove="Pizza\ShrimpsIngr.png" />
+    <None Remove="Pizza\tomatoIngr.png" />
+    <None Remove="Pizza\tomatosauceIngr.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Driver" Version="3.0.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.30.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.8" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DomainModel\DomainModel.csproj" />
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pizza\alfredosauceIngr.png" />
+    <Resource Include="Pizza\AlpinesausagesIngr.png" />
+    <Resource Include="Pizza\basilIngr.png" />
+    <Resource Include="Pizza\bbqsauceIngr.png" />
+    <Resource Include="Pizza\broccoliIngr.png" />
+    <Resource Include="Pizza\ChampignonsIngr.png" />
+    <Resource Include="Pizza\cheddarandparmesanIngr.png" />
+    <Resource Include="Pizza\cheese.bmp" />
+    <Resource Include="Pizza\cheese.jpg" />
+    <Resource Include="Pizza\cheese.png" />
+    <Resource Include="Pizza\CheeseSideIngr.png" />
+    <Resource Include="Pizza\chickIngr.png" />
+    <Resource Include="Pizza\chorizoIngr.png" />
+    <Resource Include="Pizza\custom.png" />
+    <Resource Include="Pizza\fetacheeseIngr.png" />
+    <Resource Include="Pizza\hamandcheese.png" />
+    <Resource Include="Pizza\hamIngr.png" />
+    <Resource Include="Pizza\hawaii.png" />
+    <Resource Include="Pizza\ItalianherbsIngr.png" />
+    <Resource Include="Pizza\meat.png" />
+    <Resource Include="Pizza\meatbbq.png" />
+    <Resource Include="Pizza\mozzarella.png" />
+    <Resource Include="Pizza\mozzarellaIngr.png" />
+    <Resource Include="Pizza\mushroom.png" />
+    <Resource Include="Pizza\OnionIngr.png" />
+    <Resource Include="Pizza\PepperIngr.png" />
+    <Resource Include="Pizza\pepperoni.png" />
+    <Resource Include="Pizza\pepperoniIngr.png" />
+    <Resource Include="Pizza\PineapplesIngr.png" />
+    <Resource Include="Pizza\salmon.png" />
+    <Resource Include="Pizza\salmonIngr.png" />
+    <Resource Include="Pizza\ShrimpsIngr.png" />
+    <Resource Include="Pizza\tomatoIngr.png" />
+    <Resource Include="Pizza\tomatosauceIngr.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

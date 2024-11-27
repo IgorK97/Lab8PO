@@ -1,0 +1,115 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Lab5WebApp.Models.OrderLineModel
+@{
+    ViewData["Title"] = "Добавление пиццы в корзину";
+}
+
+<h1>Добавление пиццы в корзину</h1>
+@using (Html.BeginForm("CreateLine", "LinqReport", FormMethod.Post))
+{
+    @* <label>Ингредиент:</label>
+    <select name="ingrId">
+        @foreach (var item in Model.IngredientList)
+        {
+            <option value="@item.Id">@item.C_name</option>
+        }
+    </select> *@
+    <div class="form-group">
+        <img id="pizzaImage" src="data:image/jpeg;base64,@Convert.ToBase64String(Model.pizzas.Where(p => p.Id==Model.pizzaId).FirstOrDefault().pizzaimage)" class="img-fluid"/>
+    </div>
+    <div class="form-group">
+        @* <label for="pizzaId">Выберите пиццу</label> *@
+        @* <select asp-for="pizzaId" 
+        asp-items="@(new SelectList(Model.pizzas,"Id", "C_name"))" 
+        class="form-control" id="pizzaId"
+                onchange="document.getElementById('pizzaImage').src=data:image/jpeg;base64,@Convert.ToBase64String(Model.pizzas.Where(p => p.Id==Model.pizzaId).FirstOrDefault().pizzaimage)">
+            
+            </select> *@
+            @* <select asp-for="pizzaId" id="pizzaSelector">
+            @foreach(var pizza in Model.pizzas)
+            {
+                <option value="@pizza.Id">@pizza.C_name</option>
+            }
+            </select> *@
+            @Html.HiddenFor(m =>m.pizzaId)
+            <label for="PizzaName"></label>
+            @Html.TextBoxFor(m => m.Name, htmlAttributes: new { @class = "form-control", id = "pizzaName",@readonly = "true"})
+    </div>
+    @* <div class="form-group">
+        <label for="PizzaSize_Id">Выберите размер пиццы</label>
+        <select asp-for="PizzaSize_Id" asp-items="@(new SelectList(Model.pizza_sizes,"Id", "name"))" class="form-control" id="PizzaSize_Id"></select>
+    </div> *@
+    @* <div class="form-group">
+        <label for="quantity">Выберите количество пицц</label>
+        <input asp-for="quantity" class="form-control" type="number" min="1" max="10" id="quantity" value="1"/>
+    </div> *@
+    <div>
+        <label for="position_price">Цена, руб</label>
+        @Html.TextBoxFor(m => m.position_price, htmlAttributes: new {@class="form-control", id = "pizzaPrice", @readonly="true"} )
+    </div>
+    <div>
+        <label for="weight"> Вес, г</label>
+        @Html.TextBoxFor(m => m.weight, htmlAttributes: new {@class="form-control", id = "pizzaWeight", @readonly = "true"})
+    </div>
+    @* <table>
+        <thead>
+            <tr>
+                <th>
+                    Название
+                </th>
+                <th>
+                    Изображение
+                </th>
+                <th>
+                    Цена, руб
+                </th>
+                <th>
+                    Вес, г
+                </th>
+                <th>
+                    Выбор
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.addedingredients)
+            {
+                <tr>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.C_name)
+                    </th>
+                    <th>
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(item.ingrimage)" class="img-fluid" />
+
+                    </th>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.price)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(midelItem => item.weight)
+                    </th>
+                    <th>
+                        @Html.CheckBoxFor(modelItem => item.active)
+                    </th>
+                    
+                </tr>
+            }
+        </tbody>
+    </table> *@
+    <input type="submit" value="Заказать" class="btn-default" />
+}
+@section Scripts{
+    <script type="text/javascript">
+        // document.getElementById("pizzaId").addEventListener("change", function () {
+        //     var pizzaId = this.value;
+        //     var pizzaList = Json.Serialize(Model.pizzas);
+        //     var selectedPizza = pizzaList.find(pizza => pizza.Id == pizzaId);
+        //     if (selectedPizza) {
+        //         // var base64Image = "data:image/jpeg;base64,"+btoa(String.fromCharCode.apply(null,new Uint8Array))
+        //         document.getElementById("pizzaImage").src = "data: image / jpeg; base64, @Convert.ToBase64String(Model.pizzas.Where(p => p.Id == Model.pizzaId).FirstOrDefault().pizzaimage)";
+        //     }
+        // });
+    </script>
+}

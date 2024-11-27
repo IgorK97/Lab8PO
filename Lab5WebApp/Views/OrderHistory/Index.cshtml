@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<DTO.OrderDto>
+
+@{
+    ViewData["Title"] = "История заказов";
+}
+@* <p>
+    @Html.ActionLink("Отменить заказ", "CancelOrder")
+</p> *@
+
+<table class="table">
+    <tr>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.Id) *@
+            Номер заказа
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.final_price) *@
+            Цена
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.weight) *@
+            Вес
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.ordertime) *@
+            Дата заказа
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.address_del) *@
+            Адрес доставки
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.delstatusId) *@
+            Статус заказа
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.delstatusId) *@
+            Дата доставки
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.comment) *@
+            Комментарий
+        </th>
+       
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelItem => item.Id)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.final_price)
+            </th>
+            <th>
+                @Html.DisplayFor(midelItem => item.weight)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.ordertime)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.address_del)
+            </th>
+            <th>
+                @* @Html.DropDownListFor(modelItem => item.delstatusId, new SelectList(item.delstatusId, "Id", "Name"), new { @Style = "width:100%;" }) *@
+                @Html.DisplayFor(modelItem => item.DeliveryStatus)
+
+            </th>
+            <th>
+                @* @Html.DropDownListFor(modelItem => item.delstatusId, new SelectList(item.delstatusId, "Id", "Name"), new { @Style = "width:100%;" }) *@
+                @Html.DisplayFor(modelItem => item.deliverytime)
+
+            </th>
+            @* NotPlaced = 1,
+            Canceled = 2,
+            IsBeingFormed = 3,
+            AtTheCourier = 5,
+            Delivered = 6,
+            NotDelivered = 7,
+            HandedOver = 8 *@
+            <th>
+                @Html.DisplayFor(modelItem => item.comment)
+            </th>
+            <th>
+                @Html.ActionLink("Отменить", "Cancel", new {id = item.Id})
+            </th>
+        </tr>
+    }
+</table>

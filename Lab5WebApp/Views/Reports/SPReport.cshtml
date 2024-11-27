@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Lab5WebApp.Models.SPReportModel
+@{
+    ViewData["Title"] = "Отчеты за период";
+}
+<div class="row">
+    <h1>Заказы за месяц</h1>
+    @using (Html.BeginForm()){
+        <label>Месяц:</label>
+        @Html.TextBoxFor(Model => Model.SelectedMonth, new {Type = "number"})
+        <label>Год: </label>
+        @Html.TextBoxFor(Model => Model.SelectedYear, new {Type = "number"})
+        <input type="submit" value="Найти" class="btn-default"/>
+    }
+</div>
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>
+                Номер заказа
+            </th>
+            <th>
+                ФИО курьера
+</th>
+<th>
+    Дата
+</th>
+        </tr>
+        @if (Model.ReportData != null)
+        {foreach(var item in Model.ReportData)
+            {<tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.order_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.courier_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+            </tr>
+            }
+        }
+    </table>
+</div>

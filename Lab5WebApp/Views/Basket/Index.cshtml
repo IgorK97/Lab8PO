@@ -1,0 +1,73 @@
+﻿@using DTO
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@* @model IEnumerable<OrderLineDto> *@
+@model OrderDto
+@{
+    ViewData["Title"] = "Корзина";
+}
+@using (Html.BeginForm("MakeOrder", "Basket", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.Id)
+    <label class="form-label">Цена</label>
+    @Html.TextBoxFor(m => m.final_price, new {@class = "form-control"})
+    <br/>
+    <label class="form-label">Вес </label>
+    @Html.TextBoxFor(m => m.weight, new {@class = "form-control"})
+    <br/>
+    <label>Укажите адрес</label>
+<br/>
+@Html.TextBoxFor(m => m.address_del, new {@class = "form-control"})
+<br/>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Заказать" class="btn-default"/>
+    </div>
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.quantity) *@
+            Название пиццы
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.quantity) *@
+            Изображение
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.position_price) *@
+            Цена позиции
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(Model => Model.weight) *@
+            Вес
+        </th>
+        
+       
+    </tr>
+    @foreach (var item in Model.order_lines)
+    {
+        <tr> 
+            <th>
+                @Html.DisplayFor(modelItem => item.Pizza.C_name)
+            </th>
+            <th>
+               <img width="200" height="200" src="data:image/jpeg;base64,@Convert.ToBase64String(item.Pizza.pizzaimage)" class="img-fluid" />
+
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.position_price)
+            </th>
+            <th>
+                @Html.DisplayFor(midelItem => item.weight)
+            </th>
+            
+            <th>
+                @Html.ActionLink("Удалить", "Cancel", new { id = item.Id })
+            </th>
+            
+        </tr>
+    }
+</table>
+}

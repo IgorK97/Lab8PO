@@ -1,0 +1,68 @@
+﻿
+@model Lab5WebApp.Models.LinqReportModel
+@* @{
+    ViewBag.Title = "Ассортимент";
+} *@
+
+
+@* <div>
+    <h1>Выбор пицц</h1>
+     @using (Html.BeginForm("LinqReport","Reports", FormMethod.Post))
+    { 
+    <form method="post" action="~/Reports/LinqReport">
+        @Html.DropDownListFor(model => model.SelectedIngredientId, new SelectList(Model.IngredientList, "Id", "Name"),
+                 new { @Style = "width:100%;" })
+        <input type="submit" value="Найти" class="btn-default" />
+    </form>
+
+    }
+</div> *@
+<div class="row">
+    <h1>Ассортимент</h1>
+    @using (Html.BeginForm("LinqReport", "LinqReport", FormMethod.Post))
+    {
+        <label>Ингредиент:</label>
+       <select name="ingrId">
+            @foreach(var item in Model.IngredientList)
+            {
+                <option value="@item.Id">@item.C_name</option>
+            }
+        </select>
+        <input type="submit" value="Найти" class="btn-default" />
+    }
+</div> 
+@* @Html.DropDownListFor(model => model.SelectedIngredientId, new SelectList(Model.IngredientList, "Id", "Name"),
+        new { @Style = "width:100%;" }) *@
+
+<div class="row">
+    <table class="table">
+        <tr>
+            
+            <th>
+                Название пиццы
+            </th>
+            <th>
+                Описание
+            </th>
+        </tr>
+
+        @if (Model.ReportData != null)
+        {
+            foreach (var item in Model.ReportData)
+            {
+                <tr>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <th>
+                        @Html.ActionLink("Заказать", "Create", new { id = item.Id })
+                    </th>
+                </tr>
+            }
+        }
+    </table>
+</div>
