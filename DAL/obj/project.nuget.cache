@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MzfFPXIIHFU=",
+  "dgSpecHash": "DtMs0unNwIo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Igor\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Igor\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -62,5 +62,12 @@
     "C:\\Users\\Igor\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
     "C:\\Users\\Igor\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

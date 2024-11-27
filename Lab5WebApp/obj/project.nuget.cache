@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0m8VTMXn2Ew=",
+  "dgSpecHash": "K67DBEJO/LY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Lab5WebApp\\Lab5WebApp.csproj",
+  "projectFilePath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Lab5WebApp\\Lab5WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Igor\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Igor\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -80,6 +80,12 @@
     "C:\\Users\\Igor\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\",
+  "WorkspaceRootPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89B0CB48-ADC6-4A69-AA1B-D94F3181AAAC}|DAL\\DAL.csproj|c:\\users\\igor\\source\\repos\\lab7po\\dal\\mongorepository\\reportrepositorymongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89B0CB48-ADC6-4A69-AA1B-D94F3181AAAC}|DAL\\DAL.csproj|solutionrelative:dal\\mongorepository\\reportrepositorymongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|c:\\users\\igor\\source\\repos\\lab8po\\tests\\service\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|solutionrelative:tests\\service\\orderservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41E77993-5591-434E-A61F-A6DEF251F56A}|Lab5WebApp\\Lab5WebApp.csproj|c:\\users\\igor\\source\\repos\\lab7po\\lab5webapp\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41E77993-5591-434E-A61F-A6DEF251F56A}|Lab5WebApp\\Lab5WebApp.csproj|solutionrelative:lab5webapp\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|c:\\users\\igor\\source\\repos\\lab8po\\tests\\mocks\\mockuow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|solutionrelative:tests\\mocks\\mockuow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|c:\\users\\igor\\source\\repos\\lab8po\\tests\\mocks\\mockreportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}|Tests\\Tests.csproj|solutionrelative:tests\\mocks\\mockreportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReportRepositoryMongo.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DAL\\MongoRepository\\ReportRepositoryMongo.cs",
-              "RelativeDocumentMoniker": "DAL\\MongoRepository\\ReportRepositoryMongo.cs",
-              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DAL\\MongoRepository\\ReportRepositoryMongo.cs*",
-              "RelativeToolTip": "DAL\\MongoRepository\\ReportRepositoryMongo.cs*",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwDcAAAATAAAAAAAAAA==",
+              "Title": "OrderServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Service\\OrderServiceTest.cs",
+              "RelativeDocumentMoniker": "Tests\\Service\\OrderServiceTest.cs",
+              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Service\\OrderServiceTest.cs*",
+              "RelativeToolTip": "Tests\\Service\\OrderServiceTest.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T17:48:50.55Z",
+              "WhenOpened": "2024-11-27T11:41:47.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BasketController.cs",
-              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Lab5WebApp\\Controllers\\BasketController.cs",
-              "RelativeDocumentMoniker": "Lab5WebApp\\Controllers\\BasketController.cs",
-              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Lab5WebApp\\Controllers\\BasketController.cs",
-              "RelativeToolTip": "Lab5WebApp\\Controllers\\BasketController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCEAAAAMAAAAAAAAAA==",
+              "Title": "MockUoW.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockUoW.cs",
+              "RelativeDocumentMoniker": "Tests\\Mocks\\MockUoW.cs",
+              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockUoW.cs",
+              "RelativeToolTip": "Tests\\Mocks\\MockUoW.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T17:30:09.182Z",
+              "WhenOpened": "2024-11-27T11:36:57.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MockReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockReportRepository.cs",
+              "RelativeDocumentMoniker": "Tests\\Mocks\\MockReportRepository.cs",
+              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Tests\\Mocks\\MockReportRepository.cs",
+              "RelativeToolTip": "Tests\\Mocks\\MockReportRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:32:50.856Z",
               "EditorCaption": ""
             }
           ]

@@ -3046,11 +3046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\BLL\\BLL.csproj",
+      "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\BLL\\obj\\",
+      "outputPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3068,14 +3068,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DAL\\DAL.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DomainModel\\DomainModel.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DomainModel\\DomainModel.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DomainModel\\DomainModel.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DomainModel\\DomainModel.csproj"
             },
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Interfaces\\Interfaces.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Interfaces\\Interfaces.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Interfaces\\Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Interfaces\\Interfaces.csproj"
             }
           }
         }
@@ -3135,5 +3135,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

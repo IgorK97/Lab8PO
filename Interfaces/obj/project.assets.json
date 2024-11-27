@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Interfaces\\Interfaces.csproj",
+      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Interfaces\\Interfaces.csproj",
       "projectName": "Interfaces",
-      "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Interfaces\\Interfaces.csproj",
+      "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Interfaces\\Interfaces.csproj",
       "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Interfaces\\obj\\",
+      "outputPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,8 +54,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DomainModel\\DomainModel.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DomainModel\\DomainModel.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DomainModel\\DomainModel.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DomainModel\\DomainModel.csproj"
             }
           }
         }

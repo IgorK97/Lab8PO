@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab5WebApp", "Lab5WebApp\Lab5WebApp.csproj", "{41E77993-5591-434E-A61F-A6DEF251F56A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{41E77993-5591-434E-A61F-A6DEF251F56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41E77993-5591-434E-A61F-A6DEF251F56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41E77993-5591-434E-A61F-A6DEF251F56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9888C794-F5B7-4FD0-87D7-6F25B522F1DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

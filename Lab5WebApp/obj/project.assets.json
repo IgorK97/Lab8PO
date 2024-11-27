@@ -4002,11 +4002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Lab5WebApp\\Lab5WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Lab5WebApp\\Lab5WebApp.csproj",
       "projectName": "Lab5WebApp",
-      "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Lab5WebApp\\Lab5WebApp.csproj",
+      "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Lab5WebApp\\Lab5WebApp.csproj",
       "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Lab5WebApp\\obj\\",
+      "outputPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Lab5WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4024,17 +4024,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\BLL\\BLL.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DAL\\DAL.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DomainModel\\DomainModel.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\DomainModel\\DomainModel.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DomainModel\\DomainModel.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\DomainModel\\DomainModel.csproj"
             },
-            "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Interfaces\\Interfaces.csproj": {
-              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab7PO\\Interfaces\\Interfaces.csproj"
+            "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Interfaces\\Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Igor\\source\\repos\\Lab8PO\\Interfaces\\Interfaces.csproj"
             }
           }
         }
@@ -4103,6 +4103,12 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
